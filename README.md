@@ -1,17 +1,28 @@
->**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
-
-### Date created
-Include the date you created this project and README file.
-
-### Project Title
-Replace the Project Title
-
+## US Bikeshare Data Explorer
 ### Description
-Describe what your project is about and what it does
+A python script for exploring US Bikeshare data. Forked from [udacity/pdsnd_github](https://github.com/udacity/pdsnd_github.git) on December 5th, 2021.
 
-### Files used
-Include the files used
+### Contributors
+This project is currently maintained only by [myself](https://github.com/gwejones).
+
+### Usage
+At the command prompt type `python bikeshare.py` and follow on screen instructions.
+
+### Files Used
+
+1. README.md (this document)
+1. bikeshare.py (main executable)
+
+### Copyright and Licensing
+
+Copyright (c) 2021 Gary Jones
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Special thanks to the contributors of the original project:
 
+- [Sudhanshu Kulshrestha](https://github.com/SudKul)
+- [Ruchi B](https://github.com/rbUdacProjects)
