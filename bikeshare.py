@@ -110,15 +110,15 @@ def disp_travel_times(scr, df):
         if modes[mode] == 'Month':
             ds = ds['Start Time'].dt.month.value_counts().rank()
             x_values = {ind:calendar.month_abbr[int(ind)] for ind in ds.index}
-            insight = "The most common month is " + calendar.month_name[int(ds.index[0])]
+            insight = "The most common month is {}".format(calendar.month_name[int(ds.index[0])])
         elif modes[mode] == 'Day':
             ds = ds['Start Time'].dt.dayofweek.value_counts().rank()
             x_values = {ind:calendar.day_abbr[int(ind)] for ind in ds.index}
-            insight = "The most common day of the week is " + calendar.day_name[int(ds.index[0])]
+            insight = "The most common day of the week is {}".format(calendar.day_name[int(ds.index[0])])
         elif modes[mode] == 'Hour':
             ds = ds['Start Time'].dt.hour.value_counts().rank()
             x_values = {ind:" {:0>2}".format(int(ind)) for ind in ds.index}
-            insight = "The most common time is the hour starting at " + datetime.time(ds.index[0]).strftime("%I:00 %p")
+            insight = "The most common time is the hour starting at {}".format(datetime.time(ds.index[0]).strftime("%I:00 %p"))
         s_col = curses.COLS//2-int(ds.max()//2+3)
         s_line = curses.LINES//2-int(ds.count()//2)
         scr.addstr(s_line-1,s_col-len(modes[mode])+3,modes[mode],curses.A_UNDERLINE)
