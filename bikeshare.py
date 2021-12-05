@@ -215,13 +215,13 @@ def city_selector(df):
         for num, city in enumerate(cities,1):
             print('{}) {}'.format(num, city))
         try:
-            selection = int(input('>'))
+            option = int(input('>'))
         except:
             continue
-        if selection == 1:
+        if option == 1:
             return cities[1:]
-        elif selection <= len(cities) and selection > 1:
-            return [cities[selection-1]]
+        elif option <= len(cities) and option > 1:
+            return [cities[option-1]]
 
 def durations(df):
     """
