@@ -231,7 +231,7 @@ def durations(df):
     """
     cities = city_selector(df)
     ds = df[df['City'].isin(cities)][['Start Time','End Time','Trip Duration']].sort_values('Trip Duration', ascending = False)
-    posn = 0    # the index position in the table
+    pos = 0    # the index position in the table
     # Display stats and table
     while True:
         print('\nTravel Durations\n----------------')
@@ -239,15 +239,15 @@ def durations(df):
         print('Total travel time = {} hours'.format(ds.sum(numeric_only=True)['Trip Duration']/3600))
         print('Average trip duration = {} sec'.format(ds.mean(numeric_only=True)['Trip Duration']))
         print('Raw data:')
-        print(ds.iloc[posn:posn+5])
-        selection = input('\n(p)revious, (n)ext, m(enu)? ')
-        if selection.lower()[0] == 'n':
-            posn += 5
-        elif selection.lower()[0] == 'p':
-            posn -= 5
-            if posn < 0:
-                posn = 0
-        elif selection.lower()[0] == 'm':
+        print(ds.iloc[pos:pos+5])
+        option = input('\n(p)revious, (n)ext, m(enu)? ')
+        if option.lower()[0] == 'n':
+            pos += 5
+        elif option.lower()[0] == 'p':
+            pos -= 5
+            if pos < 0:
+                pos = 0
+        elif option.lower()[0] == 'm':
             break
 
 def user_info(df):
