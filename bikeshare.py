@@ -131,6 +131,7 @@ def disp_travel_times(scr, df):
         key_pressed = scr.getkey()
 
 def travel_times(df):
+    """Calls disp_travel_times() with curses wrapper."""
     curses.wrapper(disp_travel_times, df)
 
 def disp_stations(scr, df):
@@ -197,6 +198,7 @@ def disp_stations(scr, df):
         key_pressed = scr.getkey()
 
 def stations(df):
+    """Calls disp_stations() with curses wrapper."""
     curses.wrapper(disp_stations, df)
     
 def city_selector(df):
