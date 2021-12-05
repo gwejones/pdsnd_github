@@ -6,12 +6,13 @@ A python script for exploring US Bikeshare data. Forked from [udacity/pdsnd_gith
 This project is currently maintained only by [myself](https://github.com/gwejones).
 
 ### Usage
-At the command prompt type `python bikeshare.py` and follow on screen instructions.
+1. Modify CITY_DATA dict in `bikeshare.py` to reflect filenames of city data in .csv format.
+1. At the command prompt type `python bikeshare.py` and follow on screen instructions.
 
 ### Files Used
-
 1. README.md (this document)
 1. bikeshare.py (main executable)
+2. \*.csv (city data)
 
 ### Copyright and Licensing
 
